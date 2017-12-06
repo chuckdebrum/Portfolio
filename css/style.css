@@ -1,0 +1,424 @@
+* { 
+    box-sizing: border-box; 
+}
+
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+/* ----------------------JAVASCRIPT APP------------ */
+.side-bar {
+    background-color: #D4D4D2;
+    height: 80vh;
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    width: 12%;
+    text-align: center;
+}
+
+.side-bar a {
+    padding: 10px 30px;
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+}
+
+/* ----------------------NAVIGATION SECTION------------ */
+nav {
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.logo, .menu {
+    display: inline-block;
+}
+
+.logo {
+    margin: 20px;
+    color: white;
+}
+
+.menu {
+    float: right;
+    margin: 20px;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.menu ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    padding: 20px 10px 20px 10px;
+    color: rgb(255, 255, 255);
+}
+
+.menu ul li a:hover{
+    
+    color: rgb(119, 119, 119);
+    transition: all 0.5s ease;
+}
+
+/* ------------------HEADER SECTION--------------- */
+
+header {
+    background-image: url('../images/high-tech-wallpaper.jpg');
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: -120px;
+}
+
+header p {
+    margin: 0;
+}
+
+.hero-container {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hero-container p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.btn-work, .btn-contact{
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 15px 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.btn-work {
+    background-color: rgb(77, 75, 75);
+    color: white;
+    border: 1px solid white;
+    
+}
+
+.btn-work:hover {
+    background-color: white;
+    color: rgb(77, 75, 75);
+    transition: all 0.5s ease;
+    border: 1px solid rgb(77, 75, 75);
+}
+
+.btn-contact {
+    background-color: white;
+    color: rgb(77, 75, 75);
+    border: 1px solid rgb(77, 75, 75);
+}
+
+.btn-contact:hover {
+    background-color: rgb(77, 75, 75);
+    color: white;
+    transition: all 0.5s ease;
+    border: 1px solid white;
+}
+
+/* ------------------ABOUT ME SECTION--------------- */
+
+.about-me {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.about-me:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about-me h2 {
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+.about-me h2:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    margin-left: -40px;
+    left: 50%;
+    bottom: 0px;
+    background-color: rgb(77, 75, 75);
+}
+
+.about-me .column-left, .about-me .column-right {
+    width: 50%;
+    float: left;
+}
+
+.about-me .column-left {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.about-me a {
+    background-color: rgb(77, 75, 75);
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid white;
+    
+}
+
+.about-me a:hover {
+    background-color: white;
+    color: rgb(77, 75, 75);
+    transition: all 0.5s ease;
+    border: 1px solid rgb(77, 75, 75);
+}
+
+.about-me .column-left img {
+    width: 100%;
+}
+
+/* ------------------MY SKILLS SECTION--------------- */
+
+.my-skills {
+    background-color: rgb(231, 231, 231);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.my-skills h2 {
+    position: relative;
+}
+
+.my-skills h2:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    margin-left: -40px;
+    left: 50%;
+    bottom: 0px;
+    background-color: rgb(77, 75, 75);
+}
+
+.my-skills:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.my-skills .skills-left, .my-skills .skills-middle, .my-skills .skills-right {
+    width: 33.33333333%;
+    display: inline-block;
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.my-skills i {
+    color: rgb(48, 124, 194);
+    font-size: 60px;
+}
+
+/* ------------------MY PROJECTS SECTION--------------- */
+
+.my-projects {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.my-projects h2 {
+    position: relative;
+    padding-top: 50px;
+    margin-top: 0;
+}
+
+.my-projects:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.my-projects h2:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    margin-left: -40px;
+    left: 50%;
+    bottom: 0px;
+    background-color: rgb(77, 75, 75);
+}
+
+.my-projects .project1, .my-projects .project2, .my-projects .project3 {
+    height: 300px;
+    width: 30%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.my-projects .project1 {
+    margin-left: 2%;
+    margin-right: 1.5%;
+    background-image: url("../images/best-tech-sites.jpg");
+    background-size: cover;
+}
+
+.my-projects .project2 {
+    margin-left: 1%;
+    margin-right: 1%;
+    background-image: url("../images/tech.jpg");
+    background-size: cover;
+}
+
+.my-projects .project3 {
+    margin-left: 1.5%;
+    margin-right: 2%;
+    background-image: url("../images/healthtech.jpg");
+    background-size: cover;
+}
+
+.my-projects .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-top: 310px;
+}
+
+.my-projects .overlay:hover {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding-top: 130px;
+    transition: all 0.5s ease;
+}
+
+.overlay a{
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* ------------------CONTACT SECTION--------------- */
+
+.contact-section {
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact-section:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contact-section h2 {
+    position: relative;
+    padding-top: 50px;
+    margin-top: 0;
+}
+
+.contact-section h2:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    margin-left: -40px;
+    left: 50%;
+    bottom: 0px;
+    background-color: rgb(77, 75, 75);
+}
+
+.social-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.social-container i {
+    float: left;
+    margin-top: 17px;
+    margin-right: 20px;
+    font-size: 24px;
+    color: rgb(48, 124, 194);
+}
+
+.col-1 p, .col-2 p, .col-3 p {
+    display: inline-block;
+}
+
+.col-1, .col-2, .col-3 {
+    width: 33.33333%;
+    display: inline-block;
+    float: left;
+}
+
+.col-3 p {
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* ------------------FOOTER SECTION--------------- */
+
+footer {
+    background-color: rgb(114, 114, 114);
+    padding: 20px 40px;
+}
+
+footer:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.footer-text {
+    float: left;
+}
+
+.footer-social {
+    float: right;
+    margin-top: 5px;
+}
+
+.footer-social i {
+    font-size: 25px;
+    
+    padding: 10px;
+}
+
+.footer-social i:hover {
+    color: rgb(48, 124, 194);
+}
+
+.footer-text p {
+    margin-top: 0;
+    margin-bottom: 0;
+}

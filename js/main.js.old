@@ -1,0 +1,77 @@
+var firstName = "Chuck";
+var lastName = "DeBrum";
+var myColor = "yellow";
+var myLocation = "healthtech";
+var currentYear = 2017;
+var lastYear = 2016;
+
+var exampleNumber1 = 3;
+var exampleNumber2 = "3";
+
+$("<h3 class='skillsTitle'>My current Skills</h3>").insertAfter($("#my-name + p + p"));
+
+var skills = ["JavaScript", "PHP", "HTML", "CSS", "Python"];
+var skillsLength = skills.length;
+
+$("<ul class='mySkills'></ul>").insertAfter($(".skillsTitle"));
+for (var i = 0; i < skillsLength; i++ ) {
+    $("<li>" + skills[i] + "</li>").appendTo($(".mySkills"));
+
+
+}
+
+// $("nav").css("background-color", "red");
+// $(".about-me").css("background-color", "blue");
+
+
+//                         // Parameters
+// function colorChange(myElement, myColor) {
+//     $(myElement).css("background-color", myColor);
+// }
+//             // Arguments
+// colorChange("nav", "yellow");
+// colorChange(".about-me", "orange");
+
+$(".mySkills + a").click( function() {
+    
+    $(".mySkills li:nth-child(3)").css("background-color", "red");
+}
+
+
+);
+
+
+
+
+
+if (firstName == "Telmo") {
+    $(".column-left img").attr("src", "/images/telmo.jpg");
+    $("header").css("background-image","url(/images/healthtech.jpg)");
+} else {
+    firstName = "Charles"
+    lastName = "DeBrum"
+    $(".column-left img").attr("src", "/images/headshot.png");
+    $("header").css("background-image","url(/images/high-tech-wallpaper.jpg)");
+}
+
+//Vanilla JavaScript
+
+// document.getElementById("greeting").innerHTML = "Hey its me " + firstName + " " + lastName;
+// document.getElementById("greeting").style.color = myColor;
+// document.getElementById("greeting").style.fontSize = "50px";
+// document.getElementById("job-role").innerHTML = "Front End Web Developer";
+// document.getElementById("job-role").style.color = myColor;
+// document.getElementsByClassName("logo")[0].innerHTML = firstName + "." + lastName;
+// document.getElementById("my-name").innerHTML = firstName + " " + lastName;
+// document.getElementsByClassName("logo")[0].style.color = myColor;
+
+//jQuery
+$("#greeting").text("Hello World " + firstName + lastName);
+$("#greeting").css("color", "orange");
+$("#greeting").css("font-size", "40px");
+$("#my-name").text(firstName + " " + lastName);
+
+
+$(".logo").text(firstName + "." + lastName);
+
+// console.log(firstName + lastName);
