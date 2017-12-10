@@ -25,7 +25,39 @@ body {
     cursor: pointer;
     color: white;
     text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
 
+}
+
+#introText, #introTextColor {
+    margin-bottom: 5px; 
+}
+
+
+#updateButton {
+    background-color: red;
+}
+
+.newBackgrounds {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(174, 172, 172);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;  
+}
+
+.newBackgrounds > div {
+    width: 20%;
+    height: 60px;
+    background-color: red;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.addBorder {
+    border: 2px solid red;
 }
 
 /* ----------------------NAVIGATION SECTION------------ */
