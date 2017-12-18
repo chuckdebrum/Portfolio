@@ -1,3 +1,8 @@
+
+12-18-17
+Added animations to website
+################################
+
 12-9-17
 Finished JavaScript Sidebar App
 
