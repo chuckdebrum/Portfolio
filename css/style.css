@@ -8,7 +8,7 @@ body {
     position: relative;
 }
 
-/* ----------------------JAVASCRIPT APP------------ */
+/* ----------------------JAVASCRIPT APP------------
 .side-bar {
     background-color: #D4D4D2;
     height: 80vh;
@@ -58,7 +58,7 @@ body {
 
 .addBorder {
     border: 2px solid red;
-}
+} */
 
 /* ----------------------NAVIGATION SECTION------------ */
 nav {
@@ -453,4 +453,14 @@ footer:after {
 .footer-text p {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+/* ------- Animations -------*/
+
+#greeting, #job-role, .column-left, .column-right {
+    animation-duration: 3s;
+}
+
+.my-skills, .my-projects, .contact-section {
+    opacity: 0;
 }
