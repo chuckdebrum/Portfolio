@@ -1,7 +1,8 @@
+12-29-17
+Added click smooth scrolling with JavaScript/jQuery
 
-12-18-17
-Added animations to website
 ################################
+
 
 12-9-17
 Finished JavaScript Sidebar App
