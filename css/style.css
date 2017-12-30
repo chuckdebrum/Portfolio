@@ -107,7 +107,7 @@ nav {
 
 header {
     background-image: url('../images/high-tech-wallpaper.jpg');
-    height: 500px;
+    height: 600px;
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -463,4 +463,95 @@ footer:after {
 
 .my-skills, .my-projects, .contact-section {
     opacity: 0;
+}
+
+/* ------- Hamburger Menu ------- */
+
+
+.hamburger {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+
+    nav .logo {
+        margin: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 50px;
+        height: 5px;
+        display: block;
+        background-color: white;
+        margin: 8px auto;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger.is-active .line:nth-child(2) {
+    opacity: 0;
+    }
+
+    .hamburger.is-active .line:nth-child(1) {
+        transform: translateY(13px) rotate(45deg);
+        -moz-transition: translateY(13px) rotate(45deg);
+        -webkit-transition: translateY(13px) rotate(45deg);
+        -o-transition: translateY(13px) rotate(45deg);
+    }
+
+    .hamburger.is-active .line:nth-child(3) {
+        transform: translateY(-13px) rotate(-45deg);
+        -moz-transition: translateY(-13px) rotate(-45deg);
+        -webkit-transition: translateY(-13px) rotate(-45deg);
+        -o-transition: translateY(-13px) rotate(-45deg);
+    }
+
+    .mobile-menu {
+        background-color: rgb(83, 82, 82);
+    }
+
+    .mobile-menu ul{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .mobile-menu ul li:hover {
+       background-color: black;
+    }
+
+
+    .mobile-menu ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    header {
+        background-size: cover;
+        background-position: center -335px;
+    }
 }
